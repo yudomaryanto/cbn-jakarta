@@ -1528,9 +1528,10 @@ responsive
   .hidden-content {
     display: none;
   }
-  
+
   .main-banner {
     padding-top: 196px;
+    padding-bottom: 0px;
   }
   .main-banner .left-content {
     margin-right: 0px;
@@ -1573,7 +1574,8 @@ responsive
     text-align: left;
   }
   .our-services {
-    margin-top: 200px;
+    /* margin-top: 200px; */
+    margin-top: 100px;
   }
   .our-services .left-image {
     margin-right: 0px;
