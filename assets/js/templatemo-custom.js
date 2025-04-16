@@ -3,17 +3,22 @@
 	"use strict";
 
 	// Header Type = Fixed
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    var box = $('.header-text').height();
-    var header = $('header').height();
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      var box = $('.header-text').height();
+      var header = $('header').height();
 
-    if (scroll >= box - header) {
-      $("header").addClass("background-header");
-    } else {
-      $("header").removeClass("background-header");
-    }
-  });
+      console.log('scroll: ' + scroll);
+      console.log('box: ' + box);
+      console.log('header: ' + header);
+      console.log('box - header: ' + (box - header));
+
+      if (scroll >= box) {
+        $("header").addClass("background-header");
+      } else {
+        $("header").removeClass("background-header");
+      }
+    });
 
 
 	$('.owl-our-team').owlCarousel({
